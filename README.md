@@ -1,2 +1,3 @@
 # coursera_machine_learning
-coursera machine learning course programing assignments
+
+This repo is updated with solutions to the programing assignments of coursera machine learning course as I progress through it every week
