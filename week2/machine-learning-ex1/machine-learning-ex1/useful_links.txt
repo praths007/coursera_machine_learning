@@ -1,0 +1,5 @@
+gradient descent partial derivatives:
+https://math.stackexchange.com/questions/70728/partial-derivative-in-gradient-descent-for-two-variables
+
+vectorization:
+http://blog.viggy.in/?p=1013
