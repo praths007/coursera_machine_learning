@@ -72,19 +72,20 @@ J = (1 / m) * sum(individual_train);
   
 ## considering from column 2 onwards as
 ## regularization paramter for bias (1st column should not be considered
-## so j goes starts from 2 instead of 1  
+## so i goes starts from 2 instead of 1  
+## i is column and j is row (according to formula in lecture pdf)
 theta1 = 0;
-for i = 1 : size(Theta1, 1)
-  for j = 2 : size(Theta1, 2)
-    theta1 = theta1 + Theta1(i, j) .^2;
+for i = 2 : size(Theta1, 2)
+  for j = 1 : size(Theta1, 1)
+    theta1 = theta1 + Theta1(j, i) .^2;
   endfor;
 endfor;
 
 
 theta2 = 0;
-for i = 1 : size(Theta2, 1)
-  for j = 2 : size(Theta2, 2)
-    theta2 = theta2 + Theta2(i, j) .^2;
+for i = 2 : size(Theta2, 2)
+  for j = 1 : size(Theta2, 1)
+    theta2 = theta2 + Theta2(j, i) .^2;
   endfor;
 endfor;
   
