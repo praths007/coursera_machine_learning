@@ -116,7 +116,8 @@ for i = 1:m
   endfor;
 endfor;
 
-
+% implemented according to backprop intuition lecture
+% using the same formula (which uses vectorization)
 delta2 = (delta3 * Theta2(:,2:end)) .* sigmoidGradient(z2);
 
 Theta1_grad = (1 / m) * (delta2' * a1);
